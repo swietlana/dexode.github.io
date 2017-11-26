@@ -1,9 +1,68 @@
-.logo {
-	display: block;
-	margin: auto;
-	width: 70%;
+body {
+	background-color: #333333;
+	font-family: 'Montserrat', Arial;
+	font-size: 16px;
+	margin: 10px;
 }
 
-body {
-	background-color: #d9d9d9;
+nav {
+	height: 40px;
+	position: relative;
+	margin: 100px auto 0;
+}
+
+
+nav ul {
+	margin: 0 auto;
+	width: 1000px;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	width: 140px;
+}
+
+nav ul li:nth-of-type(4) {
+	margin-left: 150px;
+}
+
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	padding: 20px 0 0 0;
+	height: 28px;
+}
+nav ul li a:hover {
+	color: #e6f120;
+}
+
+nav ul li a:active {
+	color: #e6f120;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -48px 0 0 -108px;
+}
+
+@media screen and (max-width: 800px) {
+	.logo {
+		bottom: 100%;
+	}
+
+	nav ul li:nth-of-type(4) {
+		margin-left: 0;
+	}
+
+	nav ul {
+		width: 600px;
+		position: relative;
+	}
 }
